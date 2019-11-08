@@ -6,14 +6,31 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-     
+
+    @media @mobile {
+        .flex-center();
+    }
         nav{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         width: 60%;
+
+        @media @mobile {
+            width: 100%;
+        }
         a {
             text-decoration: none;
+            font-size: 2rem;
+            color: black;
+
+            @media @mobile {
+                width: 100%;
+                text-align: center;
+                justify-content: space-around;
+            }
         }
+        
         }
+
 }
