@@ -1,13 +1,17 @@
 .home {
 
+  .fbus {
+    border-bottom: 2px dashed lightgrey;
+    .cont {
+      margin-top: 3%;
+    }
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -22,10 +26,9 @@
       }
     }
   }
-
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    border-bottom: 2px dashed lightgrey;
 
     .text-content {
       padding-left: 1%;
@@ -49,13 +52,16 @@
 
   .content-pick {
     padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
+    border-top: 2px dashed lightgrey;
     display: flex;
     justify-content: space-between;
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn {
+        .custom-button();
+      }
     }
   }
 }// home
